@@ -39,3 +39,5 @@ const val ANSI_BLUE_BACKGROUND = "\u001B[44m"
 const val ANSI_PURPLE_BACKGROUND = "\u001B[45m"
 const val ANSI_CYAN_BACKGROUND = "\u001B[46m"
 const val ANSI_WHITE_BACKGROUND = "\u001B[47m"
+
+fun <A> List<A>.pair(): Pair<A, A> = this[0] to this[1]
