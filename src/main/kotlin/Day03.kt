@@ -21,7 +21,7 @@ private fun part2(input: String): Int =
             res.groupValues.first() == "don't()" || !enabled -> acc to false
             else -> {
                 val (_, _, a, b) = res.groupValues
-                acc + (a.toInt() * b.toInt()) to true
+                (acc + a.toInt() * b.toInt()) to true
             }
         }
     }.first
